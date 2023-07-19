@@ -27,6 +27,7 @@ public class PersonRestController {
 
     @GetMapping
     public List<Person> listAll(){
+        System.out.println("ciao");
         return (List<Person>) repository.findAll();
     }
 
